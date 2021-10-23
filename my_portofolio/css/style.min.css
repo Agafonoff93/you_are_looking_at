@@ -851,14 +851,8 @@ body.ie ._ibg img {
   position: relative;
   z-index: 5;
   object-fit: contain;
-  width: 100%;
+  width: 50px;
   height: 100%;
-}
-@media (max-width: 767.98px) {
-  .skill__image {
-    width: 50px;
-    margin: 0 auto;
-  }
 }
 .skill__title {
   font-size: 20px;
