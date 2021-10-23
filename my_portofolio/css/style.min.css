@@ -1094,7 +1094,7 @@ body.ie ._ibg img {
   position: relative;
   width: 300px;
   height: 300px;
-  transition: all 0.3s ease 0s;
+  transition: all 1s ease 0s;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1107,7 +1107,9 @@ body.ie ._ibg img {
   height: 300px;
 }
 .item-portfolio__image img {
-  transition: all 0.3s ease 0s;
+  transition: all 1s ease 0s;
+  object-fit: cover;
+  object-position: top;
 }
 .item-portfolio__content {
   display: flex;
@@ -1121,7 +1123,7 @@ body.ie ._ibg img {
   width: 300px;
   height: 300px;
   background-color: #ffffffcc;
-  transition: all 0.3s ease 0s;
+  transition: all 1s ease 0s;
   padding: 20px;
   transform: translate(0px, 130%);
 }
@@ -1139,7 +1141,7 @@ body.ie ._ibg img {
 }
 .item-portfolio__title {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 146.66667%;
   text-align: center;
