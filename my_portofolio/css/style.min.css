@@ -728,7 +728,6 @@ body.ie ._ibg img {
   font-size: 20px;
   line-height: 150%;
   font-weight: 500;
-  flex: 1 1 auto;
 }
 .hello__button {
   max-width: 300px;
