@@ -850,8 +850,9 @@ body.ie ._ibg img {
 .skill__image img {
   position: relative;
   z-index: 5;
-  height: 50px;
-  width: 50px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 767.98px) {
   .skill__image {
@@ -986,15 +987,15 @@ body.ie ._ibg img {
   }
 }
 .i-find__image {
-  flex: 0 0 350px;
+  flex: 1 0 300px;
   align-items: center;
   justify-content: center;
-  min-height: 350px;
+  min-height: 300px;
 }
 @media (max-width: 767.98px) {
   .i-find__image {
     margin: 0px auto 20px auto;
-    width: 350px;
+    width: 300px;
   }
 }
 .i-find__image img {
@@ -1283,5 +1284,11 @@ body.ie ._ibg img {
 }
 .column-contacts__item::before {
   margin: 0 15px;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 120%;
+}
+@media (max-width: 1000px) {
+  .column-contacts__item::before {
+    font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+  }
 }
