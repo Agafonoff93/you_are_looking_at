@@ -436,15 +436,22 @@ body.ie ._ibg img {
 
 .header {
   width: 100%;
-  position: absolute;
-  z-index: 5;
-  background-color: #fff;
+  position: fixed;
+  z-index: 15;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.header._scroll .header__body {
+  min-height: 70px;
+}
+.header._scroll .header__body {
+  min-height: 50px;
 }
 .header__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 90px;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
   .header__body {
@@ -523,6 +530,9 @@ body.ie ._ibg img {
   .menu__link:hover {
     color: #ff6464;
   }
+}
+.menu__link._active {
+  color: #ff6464;
 }
 
 .icon-menu {
